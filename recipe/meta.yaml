@@ -1,6 +1,6 @@
 {% set name = "fasteners" %}
-{% set version = "0.15" %}
-{% set md5 = "440f8ab461c8fed941355860d8669556" %}
+{% set version = "0.16" %}
+{% set md5 = "35f400771864c68145fb3a0b47ec99db" %}
 
 package:
   name: {{ name|lower }}
