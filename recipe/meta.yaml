@@ -19,24 +19,26 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
-    - six
-    - monotonic >=0.1
-
+    - wheel
   run:
-    - python
-    - six
-    - monotonic >=0.1
+    - python >=3.6
 
 test:
   imports:
     - fasteners
-    - fasteners.tests
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/harlowja/fasteners
-  license: Apache 2.0
+  dev_url: https://github.com/harlowja/fasteners
+  doc_url: https://github.com/harlowja/fasteners/tree/master/doc/source
+  license: Apache-2.0
+  license_family: Apache
   license_file: LICENSE
   summary: A python package that provides useful locks.
 
