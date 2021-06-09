@@ -21,15 +21,18 @@ requirements:
     - pip
     - python >=3.6
     - setuptools
+    - six
     - wheel
   run:
     - python >=3.6
+    - six
 
 test:
   imports:
     - fasteners
   requires:
     - pip
+    - six
   commands:
     - pip check
 
