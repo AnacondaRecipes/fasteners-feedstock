@@ -1,6 +1,6 @@
 {% set name = "fasteners" %}
-{% set version = "0.16.2" %}
-{% set md5 = "dcc86737f47f7e8da4ec21f466fe90dd" %}
+{% set version = "0.16.3" %}
+{% set sha256 = "b1ab4e5adfbc28681ce44b3024421c4f567e705cc3963c732bf1cba3348307de" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  md5: {{ md5 }}
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
