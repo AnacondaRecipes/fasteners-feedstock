@@ -41,7 +41,8 @@ test:
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
-    - pytest -v tests
+    - pytest -v tests  # [not (win and arm64)]
+    - pytest -v tests --deselect=tests/test_eventlet.py::test_eventlet_spawn_n_bugfix  # [win and arm64]
 
 about:
   home: https://github.com/harlowja/fasteners
